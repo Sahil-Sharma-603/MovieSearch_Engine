@@ -1,28 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import MovieCard from './components/moviesCard'
 import Home from "./pages/Home"
+import Favorites from './pages/Favourites'
+import {Routes, Route, Router} from "react-router-dom"
+import NavBar from "./components/NavBar"
 
 function App() {
 
-
   return (
-    <>
-  
-      <Home />
 
-    </>
-  )
-}
-
-function Text({display}){
-  return(
     <div>
-      <p>{display}</p>
+
+        <NavBar/>
+
+    <main className = "main-content">
+
+      <Routes>
+
+        <Route path = "/" element = {<Home/>}/>  
+        <Route path = "/favourites" element = {<Favorites/>}/>
+        
+      </Routes>
+
+    </main>
     </div>
+  
   )
 }
+
 
 export default App

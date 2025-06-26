@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import MovieCard from "../components/moviesCard";
+import MovieCard from "../components/MoviesCard";
 
 function Home(){
     // State to hold the search query
@@ -17,7 +17,6 @@ function Home(){
 
     return(
         <div className = "home">
-
             <form onSubmit = {handleSearch} className = "search-form"> 
                 <input type = "text" 
                 placeholder="Search Movies ...."
@@ -36,6 +35,8 @@ function Home(){
             </div>
 
         </div>
+
+      
     );
 }
 
