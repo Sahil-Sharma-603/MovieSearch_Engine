@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import MovieCard from "../components/MoviesCard";
 import "../css/Home.css"
+import {getPopularMovies, searchPopularMovies} from "../services/api"
+
 
 function Home(){
     // State to hold the search query
@@ -14,6 +16,7 @@ function Home(){
 
     const handleSearch =()=>{
             alert(searchQuery);
+            setSearchQuery("");
     };
 
     return(
