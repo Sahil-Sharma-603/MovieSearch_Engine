@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import MovieCard from "../components/MoviesCard";
+import "../css/Home.css"
 
 function Home(){
     // State to hold the search query
